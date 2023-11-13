@@ -15,6 +15,7 @@ answer1 = num1 + num1
 answer2 = num3 * num2
 answer3 = answer1 + answer2
 
+# Task 2
 name = "Kriyes"
 address = "London"
 interest = "play video games"
