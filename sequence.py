@@ -22,7 +22,7 @@
 
 # print("My name is",name,"\nI live in",address,"\nI like to",interest)
 
-num1 = int(input("Enter your first number: "))
+# num1 = int(input("Enter your first number: "))
 # JS number, Python = integer (WHOLE numbers), float (DECIMAL numbers e.g. 4.5)
 
 # Task 3: using input function
@@ -30,5 +30,14 @@ num1 = int(input("Enter your first number: "))
 # Use a variable and invoke/call the input function to ask the user for a second number
 # add the two numbers# print out the total of the two numbers
 
-num2 = int(input("Enter your second number: "))
-print("Sum is:",num1+num2)
+# num2 = int(input("Enter your second number: "))
+# print("Sum is:",num1+num2)
+
+# Task:
+# Convert your name, interests and address variables to be dynamic instead of static
+
+name = input("What is your name? ")
+location = input("Where do you live? ")
+interests = input("What are your interests? ")
+
+print(f"Welcome! {name}.\n{location} is a pretty cool place to live!\nI see your interests are {interests}")
