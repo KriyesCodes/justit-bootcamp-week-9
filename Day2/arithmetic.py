@@ -37,11 +37,12 @@ print(num2 % num4)
 
 # division /
 "use num3 and num4 variables"
-
+print(num3 / num4)
 
 # Floor division //
 "use num3 and num4 variables"
-
+print(num3 // num4)
 
 # Modulus %
 "use num3 and num4 variables"
+print(num3 % num4)
