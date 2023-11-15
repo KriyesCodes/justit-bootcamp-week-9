@@ -42,19 +42,28 @@
 # Debug and fix the multiplication program below 
 # add comment where you fix the bugs
 
-print("Welcome to the table quiz.\n")
-num = int(input("Enter a number: "))
+# print("Welcome to the table quiz.\n")
+# num = int(input("Enter a number: "))
 
-if (num <= 0):
-  print("Please enter a positive number")
-else:
-  for i in range(1, num+1):
-    answer = int(input(f" What is {i} x {num}? "))
-    correct = i * num
-    if answer == correct:
-      outcome = "Correct"
-    else:
-      outcome = "Incorrect"
-    print(f"{outcome}, the answer is {correct}")
+# if (num <= 0):
+#   print("Please enter a positive number")
+# else:
+#   for i in range(1, num+1):
+#     answer = int(input(f" What is {i} x {num}? "))
+#     correct = i * num
+#     if answer == correct:
+#       outcome = "Correct"
+#     else:
+#       outcome = "Incorrect"
+#     print(f"{outcome}, the answer is {correct}")
 
-print("Program End")
+# print("Program End")
+
+# Task 4
+
+# Print out a multiplication table of your choice
+
+num = int(input("Enter number for multiplication: "))
+
+for i in range(1, num+1):
+  print(f"{i} x {num} = {i * num}")
