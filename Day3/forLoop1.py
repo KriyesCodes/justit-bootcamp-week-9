@@ -65,5 +65,5 @@
 
 num = int(input("Enter number for multiplication: "))
 
-for i in range(1, num+1):
+for i in range(1, 13):
   print(f"{i} x {num} = {i * num}")
