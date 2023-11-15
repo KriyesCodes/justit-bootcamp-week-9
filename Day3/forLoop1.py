@@ -45,14 +45,16 @@
 print("Welcome to the table quiz.\n")
 num = int(input("Enter a number: "))
 
+if (num <= 0):
+  print("Please enter a positive number")
+else:
+  for i in range(1, num+1):
+    answer = int(input(f" What is {i} x {num}? "))
+    correct = i * num
+    if answer == correct:
+      outcome = "Correct"
+    else:
+      outcome = "Incorrect"
+    print(f"{outcome}, the answer is {correct}")
 
-for i in range(1, num+1):
-  answer = int(input(f" What is {i} x {num}? "))    
-  print(f"Your answer is {answer} ")
-  correct = i * num
-  if answer == correct:
-    print("Correct")
-  else:
-    print(f"Incorrect, the answer is {correct}")
-
-print("Finished")
+print("Program End")
