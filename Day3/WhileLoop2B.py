@@ -23,6 +23,6 @@ while num <= 20:
 
         break
 
-    num += 1  # what is this doing ?
+    num += 1  # what is this doing ? incrementing num by 1 each iteration
 
 print("we have broken the loop")
