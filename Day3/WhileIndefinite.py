@@ -8,8 +8,10 @@ print(dateTime.strftime("%H:%M:%S"))
 # study the output of the code above and the output in the while loop to answer
 
 # What is the while loop doing?
+# The while loop is printing the current time forever
 
 # add comment to explain what you understand the"datetime.datetime.now().strftime("%H:%M:%S")"
+# returns the current time formatted as HH:MM:SS
 
 # add comment to explain what you understand the 'end='
 """
