@@ -20,6 +20,10 @@ joinWords = "Python" + " " + "Java"  # join the two words
 print(joinWords)
 "Exercise"
 # Create two variables fName and lName and join and print them using a variable called fullName
+fName = "Kriyes"
+lName = "Mahendra"
+fullName = fName + lName
+print(fullName)
 
 "You can also use string-handling techniques to find out things about a string.  "
 """
@@ -40,15 +44,21 @@ print(findFirstLetter)
 "Exercise"
 # Return all the characters from the string held in the course variable using negative values
 
+print(course[-6:])
 # [-6:] [0:]
 
 # How can you access the letter h?
+print(course[course.find('h')])
 
 "Exercise:"
 #  use any comparison operator to compare the letter "a" and "A"
 #  use any comparison operator to compare the letters "ax" and "ZZ"
 #  use any comparison operator to compare your firstname with any another first name
 # != , == , <= , >=, <,>
+
+print(f"a < A: {'a' < 'A'}")
+print(f"ax > ZZ: {'ax' > 'ZZ'}")
+print(f"kriyes > walid: {'kriyes' > 'walid'}")
 
 "For further reading See Python documentation for other string methods"
 # https://docs.python.org/3.3/library/stdtypes.html?highlight=substring#string-methods
