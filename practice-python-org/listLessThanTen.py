@@ -15,4 +15,11 @@ def listLessThan5():
 def oneLineListLessThan5():
   print([i for i in a if i < 5])
 
-oneLineListLessThan5()
+
+def lessThan(num):
+  print([i for i in a if i < num])
+
+
+num = int(input("Enter a number to cap values by: "))
+
+lessThan(num)
