@@ -9,88 +9,103 @@ the result of some operations applied to each member of another
 sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.
 For example, assume we want to create a list of squares, like:
 """
-print("squareNums1\n")
-squareNums = []
-for nums in range(5):
-    squareNums.append(nums ** 2)
-    print(squareNums)
-print("squareNums1")
-print(squareNums)
-print("\n")
+# print("squareNums1\n")
+# squareNums = []
+# for nums in range(5):
+#     squareNums.append(nums ** 2)
+#     print(squareNums)
+# print("squareNums1")
+# print(squareNums)
+# print("\n")
 
-squareNums2 = [nums ** 2 for nums in range(6)]
-print("squareNums2")
-print(squareNums2)
-print("\n")
+# squareNums2 = [nums ** 2 for nums in range(6)]
+# print("squareNums2")
+# print(squareNums2)
+# print("\n")
 
-"""
-A list comprehension consists of brackets containing an expression followed by
-a for clause, then zero or more for or if clauses. The result will be a new list
-resulting from evaluating the expression in the context of the for and if clauses 
-which follow it. For example, this listcomp combines the elements of two lists if they are not equal:
+# """
+# A list comprehension consists of brackets containing an expression followed by
+# a for clause, then zero or more for or if clauses. The result will be a new list
+# resulting from evaluating the expression in the context of the for and if clauses 
+# which follow it. For example, this listcomp combines the elements of two lists if they are not equal:
 
-"""
-# index =  0 1 2 3 4 .........
-aList = [1, 2, 3, 4, 5]
-bList = [6, 7, 8, 9, 10]
-print(aList)
-print(bList)
+# """
+# # index =  0 1 2 3 4 .........
+# aList = [1, 2, 3, 4, 5]
+# bList = [6, 7, 8, 9, 10]
+# print(aList)
+# print(bList)
 
-print(aList[2])
-print(bList[4])
-
-
-".................."
-listAB = [(a, b) for a in aList for b in bList if a != b if a%2==0]
-print(
-    f"combined elements from listA {aList} and listB{bList}\nif the items are not the same\n{listAB}"
-)
+# print(aList[2])
+# print(bList[4])
 
 
-"................."
-# joined lists
+# ".................."
+# listAB = [(a, b) for a in aList for b in bList if a != b if a%2==0]
+# print(
+#     f"combined elements from listA {aList} and listB{bList}\nif the items are not the same\n{listAB}"
+# )
 
-joinedList = aList + bList
-print(f"The joined list\n{joinedList}")
 
-# Slicing items  from two lists
+# "................."
+# # joined lists
 
-slicedItems = aList[0:3] + bList[1:4]
-print(f"Sliced List\n{slicedItems}")
+# joinedList = aList + bList
+# print(f"The joined list\n{joinedList}")
 
-# add values from list one list to another list
-listAB = [aList[i] + bList[i] for i in range(len(aList))]
-print(f"The Added items from list a {aList} and listb {bList}\n{listAB}")
+# # Slicing items  from two lists
 
-# Find common list items
-cList = [11, 20, 31, 4, 51, 9, 101]
-dList = [
-    6,
-    71,
-    81,
-    9,
-    101,
-    20,
-    31,
-    4,
-]
-commonNums = [nums for nums in cList if nums in dList]
+# slicedItems = aList[0:3] + bList[1:4]
+# print(f"Sliced List\n{slicedItems}")
 
-print(f"The commn list items are :\n{commonNums}")
+# # add values from list one list to another list
+# listAB = [aList[i] + bList[i] for i in range(len(aList))]
+# print(f"The Added items from list a {aList} and listb {bList}\n{listAB}")
 
-for nums in aList:
-    if nums in bList:
-        print(nums)
+# # Find common list items
+# cList = [11, 20, 31, 4, 51, 9, 101]
+# dList = [
+#     6,
+#     71,
+#     81,
+#     9,
+#     101,
+#     20,
+#     31,
+#     4,
+# ]
+# commonNums = [nums for nums in cList if nums in dList]
+
+# print(f"The commn list items are :\n{commonNums}")
+
+# for nums in aList:
+#     if nums in bList:
+#         print(nums)
 
 # Exercise: sort and print the items in the commons variable in ascending and descending order
 # commonNums
 # Exercise:  create two lists with at least two/three common names in both lists
 # find the common names from both lists and put them in a commonNames List
 # use the input and then the if to search the common names list for a specific name
+
+scifi = ["Ready Player One", "The Creator", "The Platform", "Rise of the Planet of the Apes", "Inception", "Life", "Bird Box", "Lucy"]
+
+thriller = ["The Creator", "Us", "Smile", "The Platform", "Life", "Joker", "Bird Box", "John Wick"]
+
+commonMovies = [movie for movie in scifi if movie in thriller]
+
+print(f"Scifi Thriller movies: {commonMovies}")
+choice = (input("Enter the movie you would like to see: ")).lower()
+
+if choice in [movie.lower() for movie in commonMovies]:
+  print("Excellent choice!")
+else:
+  print("That movie is not in the list")
+
 # Exercise : Slice list aList from 0 - 5 and bList from 0 - 4 and put them together in a new list
 
 
 # call a method on each element
-freshfruit = ["  banana", "  loganberry ", "passion fruit  "]
+# freshfruit = ["  banana", "  loganberry ", "passion fruit  "]
 
-print([weapon.strip() for weapon in freshfruit])
+# print([weapon.strip() for weapon in freshfruit])
