@@ -88,21 +88,27 @@ For example, assume we want to create a list of squares, like:
 # find the common names from both lists and put them in a commonNames List
 # use the input and then the if to search the common names list for a specific name
 
-scifi = ["Ready Player One", "The Creator", "The Platform", "Rise of the Planet of the Apes", "Inception", "Life", "Bird Box", "Lucy"]
+# scifi = ["Ready Player One", "The Creator", "The Platform", "Rise of the Planet of the Apes", "Inception", "Life", "Bird Box", "Lucy"]
 
-thriller = ["The Creator", "Us", "Smile", "The Platform", "Life", "Joker", "Bird Box", "John Wick"]
+# thriller = ["The Creator", "Us", "Smile", "The Platform", "Life", "Joker", "Bird Box", "John Wick"]
 
-commonMovies = [movie for movie in scifi if movie in thriller]
+# commonMovies = [movie for movie in scifi if movie in thriller]
 
-print(f"Scifi Thriller movies: {commonMovies}")
-choice = (input("Enter the movie you would like to see: ")).lower()
+# print(f"Scifi Thriller movies: {commonMovies}")
+# choice = (input("Enter the movie you would like to see: ")).lower()
 
-if choice in [movie.lower() for movie in commonMovies]:
-  print("Excellent choice!")
-else:
-  print("That movie is not in the list")
+# if choice in [movie.lower() for movie in commonMovies]:
+#   print("Excellent choice!")
+# else:
+#   print("That movie is not in the list")
 
 # Exercise : Slice list aList from 0 - 5 and bList from 0 - 4 and put them together in a new list
+
+aList = [1, 2, 3, 4, 5]
+bList = [6, 7, 8, 9, 10]
+
+newList = aList[0:5] + bList[0:4]
+print(newList)
 
 
 # call a method on each element
