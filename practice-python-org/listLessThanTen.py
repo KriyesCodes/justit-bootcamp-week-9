@@ -5,4 +5,11 @@ def lessThan5():
     if i < 5:
       print(f"{i} is less than 5")
 
-lessThan5()
+def listLessThan5():
+  newList = []
+  for i in a:
+    if i < 5:
+      newList.append(i)
+  print(newList)
+
+listLessThan5()
