@@ -12,4 +12,7 @@ def listLessThan5():
       newList.append(i)
   print(newList)
 
-listLessThan5()
+def oneLineListLessThan5():
+  print([i for i in a if i < 5])
+
+oneLineListLessThan5()
