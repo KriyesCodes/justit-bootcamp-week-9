@@ -13,7 +13,13 @@ def evenOddOrFour(num):
   else:
     print("The number you input is odd")
 
+def checkDivisible(dividend, divisor):
+  if (dividend % divisor == 0):
+    print(f"{dividend} is divisible by {divisor}")
+  else:
+    print(f"{dividend} is not divisible by {divisor}")
 
-num = int(input("Enter your number: "))
+dividend = int(input("Enter the number to check: "))
+divisor = int(input("Enter the divisor to check with: "))
 
-evenOddOrFour(num)
+checkDivisible(dividend, divisor)
