@@ -26,3 +26,8 @@ def generateRandomList(minListSize=10, maxListSize=20, minItemValue=0, maxItemVa
     lst.append(item)
 
   return lst
+
+def betterCommonBetweenLists(list1, list2):
+  return set([i for i in min(list1,list2) if i in max(list1,list2)])
+
+print(betterCommonBetweenLists(generateRandomList(), generateRandomList()))
